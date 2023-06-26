@@ -16,7 +16,7 @@ class Cliente:
   def cancelar(self, item, codigo):
     i = 0
     while i < len(self.carrinho):
-      if self.carrinho.codigo == codigo:
+      if self.carrinho[i].codigo == codigo:
         self.carrinho.pop(i)
         break
       i = i + 1
